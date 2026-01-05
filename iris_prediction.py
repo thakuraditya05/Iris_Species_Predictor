@@ -1,5 +1,4 @@
-# yes done by me and gpt 
-
+#  this is code wriiten purely by me and with help of geimini ui suggestions
 import streamlit as st
 import pandas as pd 
 import numpy as np
@@ -44,7 +43,7 @@ if st.session_state.name is None:
             elif submit_name and not name_input:
                 st.warning("Please provide a name to personalize your experience.")
 
-# MAIN APP ---
+# MAIN APP 
 else:
     # HEADER & GREETING  
     st.title("🌸 Iris Species Predictor")
@@ -62,7 +61,6 @@ else:
         st.session_state.submitted = False
         st.rerun()
 
-    # 
     if not st.session_state.submitted:
         st.header("Predict Classification")
         
@@ -92,7 +90,7 @@ else:
         st.success(f"### Identification Complete: **{predicted_name}**")
         st.markdown(f"**{st.session_state.name}**, based on the dimensions provided, the model is confident this is an *Iris {predicted_name}*.")
 
-        # Show the metrics summary
+        # Displaying the input dimensions
         col1, col2, col3, col4 = st.columns(4)
         col1.metric("Sepal L", f"{input_data[0][0]} cm")
         col2.metric("Sepal W", f"{input_data[0][1]} cm")
@@ -110,10 +108,7 @@ else:
 
 
 
-
-# little help from gpt
-
-
+#  this is code wriiten purely by me and with minimal  of geimini ui suggestions
 
 
 # import streamlit as st
